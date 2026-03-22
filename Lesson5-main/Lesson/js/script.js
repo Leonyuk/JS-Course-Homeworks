@@ -47,7 +47,7 @@
 //   this.style.background = "green";
 // }
 
-// // document.querySelector("div").onclick = changeColor;
+// document.querySelector("div").onclick = changeColor;
 
 // let user = document.querySelectorAll("div");
 
@@ -87,6 +87,11 @@
 //     console.log(`City is ${city}`);
 //   },
 // };
+// user.info.bind(user)();
+// user.info.bind(user)("Kharkiv");
+// user.hello();
+// user.sayHelloWindow(); 
+// user.info("Kharkiv");
 
 // const Ann = {
 //   name: "Anna",
@@ -106,7 +111,7 @@
 //========= call
 
 // const userInfo = {
-//   name: "name",
+//   name: "Igor",
 //   age: 98,
 //   logInfo: function (job) {
 //     console.group(`${name} info:`);
@@ -116,6 +121,7 @@
 //     console.groupEnd();
 //   },
 // };
+// userInfo.logInfo("teacher");
 
 // const Vano = {
 //   name: "Ivan",
@@ -124,7 +130,7 @@
 
 // userInfo.logInfo.call(Vano, "developer");
 
-//apply
+//========apply
 
 // const showUserInfo = {
 //   name: name,
@@ -196,7 +202,7 @@
 // document
 //   .querySelector("#kid")
 //   .addEventListener("click", cart.showItems.bind(child));
-// ////
+// // ////
 
 // const infoCar = {
 //   name: "BMW",
@@ -208,6 +214,8 @@
 //     );
 //   },
 // };
+
+// infoCar.showInfo();
 
 // car2 = {
 //   name: "Opel",
