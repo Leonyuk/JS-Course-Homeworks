@@ -10,7 +10,7 @@
 // btn3.addEventListener("mouseout", () => console.log("mouseover"));
 // btn4.addEventListener("mousedown", () => console.log("mousedown"));
 // btn5.addEventListener("mousemove", () => console.log("mousemove"));
-// btn6.addEventListener("keydown", () => keydownTest("keydown"));
+//  btn6.addEventListener("keydown", () => keydownTest("keydown"));
 
 // const addBtn = document.querySelector("#add");
 // const removeBtn = document.querySelector("#remove");
@@ -51,9 +51,9 @@
 //   form.reset();
 // }
 
-const parent = document.querySelector("#parent");
-const child = document.querySelector("#child");
-const item = document.querySelector("#item");
+// const parent = document.querySelector("#parent");
+// const child = document.querySelector("#child");
+// const item = document.querySelector("#item");
 
 // parent.addEventListener("click", () => console.log("Click Parent!"));
 // child.addEventListener("click", () => console.log("Click child!"));
@@ -98,23 +98,23 @@ const item = document.querySelector("#item");
 //   }
 // }
 
-// const ball = document.querySelector(".ball");
+const ball = document.querySelector(".ball");
 
-// ball.onmousedown = function (event) {
-//   function move(pageX, pageY) {
-//     ball.style.left = pageX - ball.offsetWidth / 2 + "px";
-//     ball.style.top = pageY - ball.offsetWidth / 2 + "px";
-//   }
+ball.onmousedown = function (event) {
+  function move(pageX, pageY) {
+    ball.style.left = pageX - ball.offsetWidth / 2 + "px";
+    ball.style.top = pageY - ball.offsetWidth / 2 + "px";
+  }
 
-//   move(event.pageX, event.pageY);
+  move(event.pageX, event.pageY);
 
-//   function onMouseMove(event) {
-//     move(event.pageX, event.pageY);
-//   }
+  function onMouseMove(event) {
+    move(event.pageX, event.pageY);
+  }
 
-//   document.addEventListener("mousemove", onMouseMove);
+  document.addEventListener("mousemove", onMouseMove);
 
-//   ball.onmouseup = function () {
-//     document.removeEventListener("mousemove", onMouseMove);
-//   };
-// };
+  ball.onmouseup = function () {
+    document.removeEventListener("mousemove", onMouseMove);
+  };
+};
