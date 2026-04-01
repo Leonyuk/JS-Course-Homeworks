@@ -1,0 +1,24 @@
+{
+  "name": "lesson11",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hello": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeniusSpaseJS/Lesson11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeniusSpaseJS/Lesson11/issues"
+  },
+  "homepage": "https://github.com/GeniusSpaseJS/Lesson11#readme",
+  "description": "",
+  "dependencies": {
+    "uuid": "^9.0.0",
+    "validator": "^13.9.0"
+  }
+}
